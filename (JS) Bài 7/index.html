@@ -11,8 +11,8 @@
     <script>
         function getNum() {
             do {
-                var x = prompt("Mời bạn nhập vào 1 số nguyên");
-                if (!Number.isInteger(parseFloat(x)))
+                var x = parseFloat(prompt("Mời bạn nhập vào 1 số nguyên"));
+                if (!Number.isInteger(x))
                     alert("Số vừa nhập không phải số nguyên, bấm OK để nhập lại");
                 else return x;
             } while (!Number.isInteger(x));
